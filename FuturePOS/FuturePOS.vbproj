@@ -1,0 +1,693 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A08A5B3C-20C3-4B81-B0E9-FC70578BEC41}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FuturePOS.My.MyApplication</StartupObject>
+    <RootNamespace>FuturePOS</RootNamespace>
+    <AssemblyName>FuturePOS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FuturePOS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FuturePOS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2">
+      <HintPath>F:\Projects\[FTUApps.com] - Guna UI Framework Ultimate v2.0.0.1 + Keygen\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Common.NetFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Rmo, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="DSoft" />
+    <Import Include="DSoft.MethodExtension" />
+    <Import Include="FuturePOS" />
+    <Import Include="FuturePOS.My" />
+    <Import Include="FuturePOS.My.Resources" />
+    <Import Include="Microsoft.Reporting" />
+    <Import Include="Microsoft.Reporting.WinForms" />
+    <Import Include="Microsoft.Reporting.WinForms.Internal.Soap.ReportingServices2005.Execution" />
+    <Import Include="Microsoft.ReportingServices.DataProcessing" />
+    <Import Include="Microsoft.ReportingServices.Interfaces" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.Odbc" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddItemSpecs.Designer.vb">
+      <DependentUpon>AddItemSpecs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddItemSpecs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewCategory.Designer.vb">
+      <DependentUpon>AddNewCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewIngredient.Designer.vb">
+      <DependentUpon>AddNewIngredient.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewIngredient.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewType.Designer.vb">
+      <DependentUpon>AddNewType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category.Designer.vb">
+      <DependentUpon>Category.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Category.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeSecurity.Designer.vb">
+      <DependentUpon>ChangeSecurity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeSecurity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectionModule.vb" />
+    <Compile Include="DailySales.Designer.vb">
+      <DependentUpon>DailySales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DailySales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaysWorked.Designer.vb">
+      <DependentUpon>DaysWorked.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DaysWorked.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Discount.Designer.vb">
+      <DependentUpon>Discount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Discount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrantAccess.Designer.vb">
+      <DependentUpon>GrantAccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GrantAccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngredientList.Designer.vb">
+      <DependentUpon>IngredientList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IngredientList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Items.Designer.vb">
+      <DependentUpon>Items.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Items.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemList.Designer.vb">
+      <DependentUpon>ItemList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ItemList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemSpecsList.Designer.vb">
+      <DependentUpon>ItemSpecsList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ItemSpecsList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemTypeList.Designer.vb">
+      <DependentUpon>ItemTypeList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ItemTypeList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintainance.Designer.vb">
+      <DependentUpon>Maintainance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Maintainance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PaySlip.Designer.vb">
+      <DependentUpon>PaySlip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaySlip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintPreview1.Designer.vb">
+      <DependentUpon>PrintPreview1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PrintPreview1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product.Designer.vb">
+      <DependentUpon>Product.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Product.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductInquiry.Designer.vb">
+      <DependentUpon>ProductInquiry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductInquiry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsList.Designer.vb">
+      <DependentUpon>ProductsList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Qty.Designer.vb">
+      <DependentUpon>Qty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Qty.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Records.Designer.vb">
+      <DependentUpon>Records.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Records.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporting.Designer.vb">
+      <DependentUpon>Reporting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales.Designer.vb">
+      <DependentUpon>Sales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeSection.Designer.vb">
+      <DependentUpon>EmployeeSection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeSection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security.Designer.vb">
+      <DependentUpon>Security.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.vb">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settle.Designer.vb">
+      <DependentUpon>Settle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shifts.Designer.vb">
+      <DependentUpon>Shifts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Shifts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock.Designer.vb">
+      <DependentUpon>Stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockManage.Designer.vb">
+      <DependentUpon>StockManage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.Designer.vb">
+      <DependentUpon>User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddItemSpecs.resx">
+      <DependentUpon>AddItemSpecs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewCategory.resx">
+      <DependentUpon>AddNewCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewIngredient.resx">
+      <DependentUpon>AddNewIngredient.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewType.resx">
+      <DependentUpon>AddNewType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category.resx">
+      <DependentUpon>Category.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeSecurity.resx">
+      <DependentUpon>ChangeSecurity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailySales.resx">
+      <DependentUpon>DailySales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DaysWorked.resx">
+      <DependentUpon>DaysWorked.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Discount.resx">
+      <DependentUpon>Discount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrantAccess.resx">
+      <DependentUpon>GrantAccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngredientList.resx">
+      <DependentUpon>IngredientList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Items.resx">
+      <DependentUpon>Items.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemList.resx">
+      <DependentUpon>ItemList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemSpecsList.resx">
+      <DependentUpon>ItemSpecsList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemTypeList.resx">
+      <DependentUpon>ItemTypeList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintainance.resx">
+      <DependentUpon>Maintainance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaySlip.resx">
+      <DependentUpon>PaySlip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintPreview1.resx">
+      <DependentUpon>PrintPreview1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product.resx">
+      <DependentUpon>Product.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductInquiry.resx">
+      <DependentUpon>ProductInquiry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsList.resx">
+      <DependentUpon>ProductsList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Qty.resx">
+      <DependentUpon>Qty.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Records.resx">
+      <DependentUpon>Records.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting.resx">
+      <DependentUpon>Reporting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales.resx">
+      <DependentUpon>Sales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeSection.resx">
+      <DependentUpon>EmployeeSection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security.resx">
+      <DependentUpon>Security.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settle.resx">
+      <DependentUpon>Settle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shifts.resx">
+      <DependentUpon>Shifts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock.resx">
+      <DependentUpon>Stock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage.resx">
+      <DependentUpon>StockManage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\ShoppingCartLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SalesLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sales36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SalesReport36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Burger36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Category36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Records36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManageUser36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SignOut36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddNew36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Records361.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FullScreen_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Burger_36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_folder_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_28px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_24px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_24px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warehouse_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create_order_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\used_product_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\discount_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_archive_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send_job_list_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove_tag_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tax_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\discount_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\discount_30pxred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clear361.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broken_pencil_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recycle_bin_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_trash_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_trash_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark_28px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broom_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Space Burger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_20px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_20px22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depot_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depot_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_window_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hamburger_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\management_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_20px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_window_40px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conference_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meeting_room_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_28px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_20px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_out_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_to_extents_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\external_48px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="..\packages\ReportPortal.Client.3.0.5\build\net45\ReportPortal.Client.targets" Condition="Exists('..\packages\ReportPortal.Client.3.0.5\build\net45\ReportPortal.Client.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\ReportPortal.Client.3.0.5\build\net45\ReportPortal.Client.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ReportPortal.Client.3.0.5\build\net45\ReportPortal.Client.targets'))" />
+  </Target>
+</Project>

@@ -144,7 +144,7 @@ Partial Class Form1
         '
         Me.lblShow.AutoSize = True
         Me.lblShow.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblShow.ForeColor = System.Drawing.Color.DeepSkyBlue
+        Me.lblShow.ForeColor = System.Drawing.Color.DarkCyan
         Me.lblShow.Location = New System.Drawing.Point(9, 832)
         Me.lblShow.Name = "lblShow"
         Me.lblShow.Size = New System.Drawing.Size(146, 24)
